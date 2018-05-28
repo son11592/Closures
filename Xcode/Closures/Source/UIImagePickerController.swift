@@ -97,7 +97,7 @@ extension UIImagePickerController {
                             allow: UIImagePickerController.MediaFilter = .image,
                             cameraOverlay: UIView? = nil,
                             showsCameraControls: Bool = true,
-                            didCancel: @escaping ( _ picker: UIImagePickerController) -> Void = dismissFromPresenting,
+                            didCancel: @escaping ( _ picker: UIImagePickerController) -> Void = UIImagePickerController.dismissFromPresenting,
                             didPick: @escaping (_ result: UIImagePickerController.Result, _ picker: UIImagePickerController) -> Void) {
         self.init()
         sourceType = source
